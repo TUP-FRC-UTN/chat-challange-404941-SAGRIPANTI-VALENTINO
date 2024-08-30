@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-4"></div>
+    <div class="col-4">
+      <div class="card">
+        <div class="card-header">
+          <h4>Conversacion</h4>
+        </div>
+        <div class="card-body">
+          @for (msj of mensajes; track mensajes) {
+            <p>{{msj}}</p>
+          }
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <app-usuario-msj [nombre]="'Juan'"></app-usuario-msj>
+          </div>
+          <div class="col-6">
+            <app-usuario-msj [nombre]="'Diego'"></app-usuario-msj>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-4"></div>
+
+    
+  </div>
+</div>
