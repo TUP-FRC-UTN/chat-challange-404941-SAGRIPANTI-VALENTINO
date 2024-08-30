@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RouterEvent, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-usuario-msj',
@@ -17,5 +16,6 @@ export class UsuarioMsjComponent {
 
   enviarMensaje(){
     this.enventoEnvio.emit(this.mensaje = this.nombre + " : " + this.mensaje)
+    this.mensaje = ""
   }
 }
