@@ -2,4 +2,8 @@
     <div class="card-header">
         <p>{{nombre}}</p>
     </div>
+    <div class="card-body">
+        <input type="text" class="form-control" [(ngModel)]="mensaje">
+        <button class="btn btn-primary mt-3" (click)="enviarMensaje()">Enviar</button>
+    </div>
 </div>

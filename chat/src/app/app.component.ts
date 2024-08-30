@@ -11,4 +11,8 @@ import { UsuarioMsjComponent } from "./usuario-msj/usuario-msj.component";
 })
 export class AppComponent {
   @Input() mensajes : string[] | undefined
+
+  setMensaje(msj : string){
+    this.mensajes?.push(msj)
+  }
 }
